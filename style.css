@@ -1,0 +1,219 @@
+/* General Styles */
+:root {
+    --primary-color: #004d99; /* Darker blue */
+    --secondary-color: #007bff; /* Lighter blue */
+    --background-color: #f0f8ff;
+    --light-color: #fff;
+    --dark-color: #212529;
+    --gray-color: #6c757d;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: var(--dark-color);
+    background-color: var(--background-color);
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-padding {
+    padding: 4em 0;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    padding: 3em 0 2em;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 4em;
+    font-weight: bold;
+    color: var(--light-color);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: 0.1em;
+}
+
+header .tagline {
+    font-size: 1.5em;
+    color: var(--light-color);
+    margin-top: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: var(--light-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: var(--dark-color);
+}
+
+/* About Section - New Layout */
+#about {
+    background-color: var(--light-color);
+    text-align: center;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--secondary-color);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 2em;
+}
+
+/* Skills Section - New Layout */
+#skills {
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 2em;
+}
+
+.skills-list li {
+    background-color: var(--light-color); /* No blue box */
+    padding: 1.5em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+    text-align: left;
+    margin-bottom: 1.5em;
+}
+
+.skills-list li:hover {
+    transform: translateY(-5px);
+}
+
+.skills-list li h3 {
+    margin-top: 0;
+    color: var(--secondary-color);
+}
+
+/* Projects Section - Same Layout, but with new styles */
+#projects {
+    background-color: var(--light-color);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.project-item {
+    background-color: var(--background-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    padding: 1.5em;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.project-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+/* Resume & Contact Sections */
+#resume, #contact {
+    text-align: center;
+    background-color: var(--background-color);
+}
+
+#contact .contact-info {
+    margin-top: 1.5em;
+}
+
+#contact .contact-info p {
+    margin: 0.5em 0;
+    font-size: 1.1em;
+}
+
+#contact .contact-info a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.btn-resume {
+    background-color: var(--secondary-color);
+}
+
+.btn-resume:hover {
+    background-color: var(--primary-color);
+}
+
+/* Footer Section */
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 1.5em 0;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
